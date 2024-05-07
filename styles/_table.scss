@@ -1,0 +1,29 @@
+$shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+
+thead {
+  --bs-table-bg: #cfe6e3;
+}
+
+.table {
+  --bs-table-bg: #f5f5f5;
+}
+
+.styled-table {
+  margin-bottom: 17px;
+  font-size: 0.9em;
+  box-shadow: $shadow;
+}
+
+.table-hover {
+  --bs-table-hover-bg: #e5f3ef;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px;
+}
+
+table td,
+table th {
+  text-align: center;
+}
