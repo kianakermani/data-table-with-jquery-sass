@@ -73,8 +73,8 @@ $colors: (
   @include PopUp;
 }
 
-// using loop 
-$table-selector: table ; // Replace with your actual table selector
+// using loop
+$table-selector: table;
 
 // Loop through all rows (tr)
 @each $row in (tr) {
