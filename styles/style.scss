@@ -72,3 +72,13 @@ $colors: (
 .popup {
   @include PopUp;
 }
+
+// using loop 
+$table-selector: table ; // Replace with your actual table selector
+
+// Loop through all rows (tr)
+@each $row in (tr) {
+  #{$table-selector} #{$row} {
+    font-weight: bold;
+  }
+}

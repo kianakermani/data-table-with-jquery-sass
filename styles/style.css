@@ -109,4 +109,8 @@ input[type=checkbox] {
 }
 .popup a:hover {
   background-color: #cfe6e3;
+}
+
+table tr {
+  font-weight: bold;
 }/*# sourceMappingURL=style.css.map */
