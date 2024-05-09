@@ -1,22 +1,21 @@
 $.fn.showInfoButton = function () {
   $(this).toggleClass("is-active");
+
   if ($(this).hasClass("is-active")) {
-    // Find all checkboxes
+    // Find all checked checkboxes
     $("input[type='checkbox']:checked").each(function () {
       var checkbox = $(this);
       var tableRow = checkbox.closest("tr");
-      var newRow = tableRow.clone();
-      newRow.appendTo(newTable);
+      tableRow.show(); // Show the checked row
     });
 
-    // Clear any existing content in the "filteredResults" element
-    $("#filteredResults").empty();
-
-    // Append the new table to the "filteredResults" element
-    newTable.appendTo("#filteredResults");
-    window.scrollTo(0, document.body.scrollHeight);
+    $("input[type='checkbox']:not(:checked)").each(function () {
+      var checkbox = $(this);
+      var tableRow = checkbox.closest("tr");
+      tableRow.hide();
+    });
   } else {
-    // Clear any existing filtered results when "is-active" is removed
-    $("#filteredResults").empty();
+    // Show all rows when "is-active" is removed
+    $("tr").show();
   }
 };

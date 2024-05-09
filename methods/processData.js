@@ -18,14 +18,14 @@
         .attr("uKey", ID)
         .append($("<td><input class='checked' type='checkbox'></td>"))
         .append($("<td id='rowCount'>").text(index + 1))
-        .append($("<td>").text(SenderName))
-        .append($("<td>").text(RoleName))
-        .append($("<td>").text(EntityTypeName))
-        .append($("<td>").text(Title))
-        .append($("<td>").text(ActionName))
-        .append($("<td>").text(EntityNumber))
-        .append($("<td>").text(ReceiveDate))
-        .append($("<td>").text(FollowingType))
+        .append(createTableCell(SenderName, SenderName))
+        .append(createTableCell(RoleName, RoleName))
+        .append(createTableCell(EntityTypeName, EntityTypeName))
+        .append(createTableCell(Title, Title))
+        .append(createTableCell(ActionName, ActionName))
+        .append(createTableCell(EntityNumber, EntityNumber))
+        .append(createTableCell(ReceiveDate, ReceiveDate))
+        .append(createTableCell(FollowingType, FollowingType))
         .append(
           '<td> <button class="btn-action"><i class="fa-solid fa-circle-info "></i></button></td>' //the icon button
         )
@@ -45,6 +45,7 @@
       //click on info(first) icon button
       $("#info_" + ID + "").click(function () {
         event.preventDefault();
+        $("#filterTable thead").show();
         $(this).toggleClass("is-active");
         $("#filterTable tbody").empty();
         var clickedElement = $(this).parents("tr");
@@ -55,20 +56,15 @@
 
           selectedCells.each(function (index) {
             var cellData = $(this).text();
-            var newCell = $("<td></td>").text(cellData);
-            // Create new cell with data
+            var newCell = createTableCell(cellData, cellData);
 
             newRow.append(newCell); // Add the new cell to the new row
+            newRow.children("td:nth-child(2)").text("");
             if (index) {
               newRow.attr("ukey", ID);
             }
             newRow.appendTo(newTable);
           });
-          
-
-          // Clear any existing content in the "filteredResults" element
-
-          // Append the new table to the "filteredResults" element
           newTable.appendTo("#filteredResults");
           window.scrollTo(0, document.body.scrollHeight);
         }
@@ -87,12 +83,9 @@
         if ($("#filterTable tbody tr").length === 0) {
           $("#filterTable thead").hide();
         }
-
         // Update rowCount
-        $("#table tr , #filterTable tr").each(function (i) {
-          $(this)
-            .find("#rowCount")
-            .text(i - 1);
+        $("#table tr").each(function (i) {
+          $(this).find("#rowCount").text(i);
         });
       });
     });

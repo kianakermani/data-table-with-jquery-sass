@@ -33,6 +33,14 @@ table th {
   text-align: center;
 }
 
+.dataCell {
+  max-width: 100px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+
 .fa-circle-info {
   font-size: 130%;
   margin-top: 4px;

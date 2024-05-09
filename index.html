@@ -1,33 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <script
-      src="https://kit.fontawesome.com/eedcf64c57.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    />
-    <script src="./jquery-3.7.1.js"></script>
 
-    <title>تمرین اول</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./styles/style.css" />
+  <script src="https://kit.fontawesome.com/eedcf64c57.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <script src="./jquery-3.7.1.js"></script>
 
-  <body>
-    <select id="theme-selector">
-      <option value="" disabled selected>تم مورد نظر خود را انتخاب کنید </option>
-    </select>
-    <div id="table-container" style="overflow-x: auto">
+  <title>تمرین اول</title>
+</head>
+
+<body>
+  <div>
+    <div id="table-container" style="overflow-x:auto">
       <table class="table table-hover styled-table" id="table">
         <thead>
           <tr>
@@ -45,17 +34,20 @@
           </tr>
         </thead>
         <tbody>
-          <tr id="data"></tr>
+
         </tbody>
       </table>
-      <button id="result" class="button-45" role="button">نمایش اطلاعات</button>
-      <div id="filteredResults"></div>
     </div>
+    <button id="result" class="button-45" role="button">نمایش اطلاعات</button>
+    <div id="filteredResults" style="overflow-x:auto"></div>
+  </div>
 
-    <script src="./methods/processData.js"></script>
-    <script src="./methods/openClosePopUp.js"></script>
-    <script src="./methods/showInfoButton.js"></script>
-    <script src="./methods/createFilterTable.js"></script>
-    <script src="./index.js"></script>
-  </body>
+  <script src="./methods/processData.js"></script>
+  <script src="./methods/openClosePopUp.js"></script>
+  <script src="./methods/showInfoButton.js"></script>
+  <script src="./methods/createFilterTable.js"></script>
+  <script type="text/javascript" src="./methods/longPress.js"></script>
+  <script src="./index.js"></script>
+</body>
+
 </html>
