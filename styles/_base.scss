@@ -5,4 +5,10 @@ body {
   direction: rtl;
   background-color: $base-bg-color;
   font-family: Sahel VF;
+  height: 100vh;
+  margin: 0;
+}
+
+.lDirection {
+  direction: ltr;
 }

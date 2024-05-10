@@ -3,6 +3,7 @@
 @use "./table";
 @use "./icon";
 @use "./checkbox";
+@use "./dark";
 
 // button style with map
 $colors: (
@@ -81,8 +82,4 @@ $table-selector: table;
   #{$table-selector} #{$row} {
     font-weight: bold;
   }
-}
-
-@mixin Light{
-    
 }

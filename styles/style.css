@@ -3,6 +3,12 @@ body {
   direction: rtl;
   background-color: #f8f8f8;
   font-family: Sahel VF;
+  height: 100vh;
+  margin: 0;
+}
+
+.lDirection {
+  direction: ltr;
 }
 
 thead {
@@ -65,6 +71,48 @@ input[type=checkbox] {
 .checked {
   margin-top: 4.5px;
   accent-color: green;
+}
+
+.dark-theme {
+  background-color: rgb(126, 126, 126);
+}
+.dark-theme thead {
+  --bs-table-bg: #406a65;
+}
+.dark-theme .table {
+  --bs-table-bg: #6e6e6e;
+}
+.dark-theme .table-hover {
+  --bs-table-hover-bg: #7e7e7e;
+}
+.dark-theme .btn-action {
+  background-color: #7e7e7e;
+}
+.dark-theme .fa-circle-info:hover {
+  color: rgb(213, 213, 213);
+}
+.dark-theme select {
+  background-color: #444444;
+  color: white;
+}
+.dark-theme .button-45 {
+  background-color: #214d47;
+  border: 1px solid #b1d6d1;
+  color: #59c4ad;
+}
+.dark-theme .button-45:hover {
+  background-color: rgb(52, 126, 121);
+  border-color: #a4fae0;
+}
+.dark-theme .popup {
+  --bs-table-hover-bg: #535353;
+  border: 1px solid #ccc;
+}
+.dark-theme .popup a {
+  color: #9b9b9b;
+}
+.dark-theme .popup a:hover {
+  background-color: #444847;
 }
 
 .button-45 {
