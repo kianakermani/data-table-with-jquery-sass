@@ -1,5 +1,9 @@
 .dark-theme {
-  background-color: rgb(126, 126, 126);
+  background-color: rgb(31, 31, 31);
+
+  .all {
+    background-color: #6e6e6e;
+  }
 
   thead {
     --bs-table-bg: #406a65;
@@ -23,7 +27,7 @@
 
   select {
     background-color: #444444;
-    color: white;
+    color: #e1e1e1;
   }
 
   .button-45 {
