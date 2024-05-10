@@ -11,6 +11,18 @@ body {
   direction: ltr;
 }
 
+select {
+  padding: 5px;
+  margin-bottom: 10px;
+  margin-right: 8px;
+  margin-left: 8px;
+  margin-top: 3px;
+}
+
+option {
+  font-size: large;
+}
+
 thead {
   --bs-table-bg: #cfe6e3;
 }

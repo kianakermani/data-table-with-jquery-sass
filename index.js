@@ -4,7 +4,7 @@ var xml =
 $(document).ready(function () {
   //theme
   $("#theme-selector").append("<option value='light'>روشن</option>");
-  $("#theme-selector").append("<option value='dark'>تاریک</option>");
+  $("#theme-selector").append("<option value='dark'>تیره</option>");
 
   $("#theme-selector").val("light");
 
