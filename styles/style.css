@@ -11,10 +11,6 @@ body {
   background-color: #f8f8f8;
 }
 
-.lDirection {
-  direction: ltr;
-}
-
 select {
   padding: 5px;
   margin-bottom: 10px;
@@ -124,7 +120,7 @@ input[type=checkbox] {
   border-color: #a4fae0;
 }
 .dark-theme .popup {
-  --bs-table-hover-bg: #535353;
+  --bs-table-hover-bg: #5f5f5f;
   border: 1px solid #ccc;
 }
 .dark-theme .popup a {
@@ -132,6 +128,13 @@ input[type=checkbox] {
 }
 .dark-theme .popup a:hover {
   background-color: #444847;
+}
+
+.lDirection {
+  direction: ltr;
+}
+.lDirection .button-45 {
+  margin-left: 7px;
 }
 
 .button-45 {
