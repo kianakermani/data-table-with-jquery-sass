@@ -136,6 +136,10 @@ input[type=checkbox] {
 .lDirection .button-45 {
   margin-left: 7px;
 }
+.lDirection .popup {
+  top: 0px;
+  left: 1380px;
+}
 
 .button-45 {
   align-items: center;
@@ -187,6 +191,10 @@ input[type=checkbox] {
 }
 .popup a:hover {
   background-color: #cfe6e3;
+}
+.popup .open-left {
+  right: 100%;
+  transform: translateX(100%);
 }
 
 table tr {

@@ -69,6 +69,11 @@ $colors: (
   a:hover {
     background-color: #cfe6e3;
   }
+
+  .open-left {
+    right: 100%;
+    transform: translateX(100%);
+  }
 }
 
 .popup {
