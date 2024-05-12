@@ -49,8 +49,10 @@
         $(this).toggleClass("is-active");
         $("#filterTable tbody").empty();
         var clickedElement = $(this).parents("tr");
+        
 
         if ($(this).hasClass("is-active")) {
+          clickedElement.find("input[type='checkbox']").prop("checked", true);
           var selectedCells = clickedElement.find("td");
           var newRow = $("<tr></tr>");
 
