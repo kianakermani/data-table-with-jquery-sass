@@ -4,7 +4,7 @@
 @use "./icon";
 @use "./checkbox";
 @use "./dark";
-@use "./lDirection";
+@use "./Direction";
 
 // button style with map
 $colors: (
@@ -28,7 +28,7 @@ $colors: (
   font-weight: 700;
   line-height: 33.4929px;
   padding: 2px 12px;
-  margin-right: 7px;
+  // margin-right: 7px;
   margin-bottom: 15px;
   // float: $start-direction;
 }
@@ -42,8 +42,6 @@ $colors: (
 @mixin PopUp {
   display: none;
   position: absolute;
-  top: 0px;
-  left: 45px;
   --bs-table-hover-bg: #ececec;
   border: 1px solid #ccc;
   padding: 10px;
@@ -90,3 +88,5 @@ $table-selector: table;
     font-weight: bold;
   }
 }
+
+

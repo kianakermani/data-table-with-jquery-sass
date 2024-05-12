@@ -1,6 +1,5 @@
 html,
 body {
-  direction: rtl;
   background-color: #f8f8f8;
   font-family: Sahel VF;
   height: 100%;
@@ -130,6 +129,16 @@ input[type=checkbox] {
   background-color: #444847;
 }
 
+.rDirection {
+  direction: rtl;
+}
+.rDirection .button-45 {
+  margin-right: 7px;
+}
+.rDirection .popup {
+  left: 45px;
+}
+
 .lDirection {
   direction: ltr;
 }
@@ -137,7 +146,6 @@ input[type=checkbox] {
   margin-left: 7px;
 }
 .lDirection .popup {
-  top: 0px;
   left: 1380px;
 }
 
@@ -154,7 +162,6 @@ input[type=checkbox] {
   font-weight: 700;
   line-height: 33.4929px;
   padding: 2px 12px;
-  margin-right: 7px;
   margin-bottom: 15px;
 }
 
@@ -167,8 +174,6 @@ input[type=checkbox] {
 .popup {
   display: none;
   position: absolute;
-  top: 0px;
-  left: 45px;
   --bs-table-hover-bg: #ececec;
   border: 1px solid #ccc;
   padding: 10px;

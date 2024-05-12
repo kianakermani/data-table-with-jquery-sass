@@ -3,6 +3,7 @@ $(document).ready(function () {
   $("#direction-selector").append("<option value='rtl'>راست به چپ</option>");
   $("#direction-selector").append("<option value='ltr'>چپ به راست</option>");
 
+  $("body").addClass("rDirection");
   $("#direction-selector").val("rtl");
 
   $("#direction-selector").change(function () {
