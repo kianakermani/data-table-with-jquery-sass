@@ -1,7 +1,13 @@
 $.fn.showInfoButton = function () {
+  debugger;
+  $("#filterTable thead").show();
   $(this).toggleClass("is-active");
   if ($(this).hasClass("is-active")) {
-    $("#filterTable tbody").empty();
+
+
+    // Clear the new table before appending new rows
+    newTable.children("tbody").empty();
+
     // Find all checkboxes
     $("input[type='checkbox']:checked").each(function () {
       var checkbox = $(this);
