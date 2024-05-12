@@ -8,6 +8,7 @@ $.fn.showInfoButton = function () {
       var tableRow = checkbox.closest("tr");
       var newRow = tableRow.clone();
       newRow.children("td:nth-child(2)").text("");
+      newRow.children("td:nth-child(11)").text("");
       newRow.appendTo(newTable);
     });
 
