@@ -5,23 +5,12 @@
 @use "./checkbox";
 @use "./dark";
 @use "./Direction";
-
-// button style with map
-$colors: (
-  "bg": #cfe6e3,
-  "borderColor": #b1d6d1,
-  "Color": #288873,
-  "bgHover": rgb(173, 233, 229),
-  "borderHover": #a4fae0,
-);
+@use "./Ltheme";
 
 .button-45 {
   align-items: center;
-  background-color: map.get($colors, "bg");
-  border: 1px solid map.get($colors, "borderColor");
   border-radius: 11px;
   box-sizing: border-box;
-  color: map.get($colors, "Color");
   cursor: pointer;
   display: flex;
   font-size: 1rem;
@@ -33,17 +22,10 @@ $colors: (
   // float: $start-direction;
 }
 
-.button-45:hover {
-  background-color: map.get($colors, "bgHover");
-  border-color: map.get($colors, "borderHover");
-}
-
 /* styling popup */
 @mixin PopUp {
   display: none;
   position: absolute;
-  --bs-table-hover-bg: #ececec;
-  border: 1px solid #ccc;
   padding: 10px;
   border-radius: 5%;
 
@@ -61,12 +43,7 @@ $colors: (
     display: block;
     padding: 5px 10px;
     text-decoration: none;
-    color: #000;
     border-radius: 5%;
-  }
-
-  a:hover {
-    background-color: #cfe6e3;
   }
 
   .open-left {
@@ -89,4 +66,11 @@ $table-selector: table;
   }
 }
 
+.dark-theme {
+  @import "./Dtheme";
 
+}
+
+.light-theme {
+  @import "./Ltheme";
+}

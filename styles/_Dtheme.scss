@@ -1,0 +1,74 @@
+$colors: (
+  "baseBgColor": rgb(31, 31, 31),
+  "baseBgColor2": #6e6e6e,
+  "icon-color": rgb(213, 213, 213),
+  "border-popup": #ccc,
+  "a-color": #000,
+  "a-hover": #cfe6e3,
+  "bg": #214d47,
+  "borderColor": #b1d6d1,
+  "Color": #59c4ad,
+  "bgHover": rgb(52, 126, 121),
+  "borderHover": #a4fae0,
+  "btn-color": #7e7e7e,
+  "select-bg": #444444,
+  "select-color": #e1e1e1,
+);
+
+html,
+body {
+  background-color: map-get($colors, "baseBgColor");
+}
+
+.all {
+  background-color: map-get($colors, "baseBgColor2");
+}
+
+.fa-circle-info:hover {
+  color: map-get($colors, "icon-color");
+}
+
+thead {
+  --bs-table-bg: #406a65;
+}
+
+.table {
+  --bs-table-bg: #6e6e6e;
+}
+
+.table-hover {
+  --bs-table-hover-bg: #7e7e7e;
+}
+
+.btn-action {
+  background-color: map-get($colors, "btn-color");
+}
+
+select {
+  background-color: map-get($colors, "selecet-bg");
+  color: map-get($colors, "select-color");
+}
+
+.button-45 {
+  background-color: map-get($colors, "bg");
+  border: 1px solid map-get($colors, "borderColor");
+  color: map-get($colors, "Color");
+}
+
+.button-45:hover {
+  background-color: map-get($colors, "bgHover");
+  border-color: map-get($colors, "borderHover");
+}
+
+.popup {
+  --bs-table-hover-bg: #ececec;
+  border: 1px solid map-get($colors, "border-popup");
+
+  a {
+    color: map-get($colors, "a-color");
+  }
+
+  a:hover {
+    background-color: map-get($colors, "a-hover");
+  }
+}

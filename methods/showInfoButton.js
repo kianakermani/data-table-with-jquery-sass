@@ -1,5 +1,4 @@
 $.fn.showInfoButton = function () {
-  debugger;
   $("#filterTable thead").show();
   $(this).toggleClass("is-active");
   if ($(this).hasClass("is-active")) {

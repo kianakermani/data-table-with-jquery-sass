@@ -7,9 +7,9 @@ $(document).ready(function () {
   $("#direction-selector").val("rtl");
 
   $("#direction-selector").change(function () {
-    var theme = $(this).val();
+    var dir = $(this).val();
 
-    if (theme === "rtl") {
+    if (dir === "rtl") {
       $("body").removeClass("lDirection");
     } else {
       $("body").addClass("lDirection");
