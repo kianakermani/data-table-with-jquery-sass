@@ -10,9 +10,6 @@ $.fn.showInfoButton = function () {
       newRow.appendTo(newTable);
     });
 
-    debugger;
-    // Clear any existing content in the "filteredResults" element
-
     // Append the new table to the "filteredResults" element
     newTable.appendTo("#filteredResults");
     window.scrollTo(0, document.body.scrollHeight);
