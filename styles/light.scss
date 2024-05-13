@@ -1,3 +1,5 @@
+@use "./style.scss";
+
 $colors: (
   "baseBgColor": #f8f8f8,
   "baseBgColor2": rgb(241, 241, 241) 8,
@@ -10,6 +12,9 @@ $colors: (
   "Color": #288873,
   "bgHover": rgb(173, 233, 229),
   "borderHover": #a4fae0,
+  "btn-color": #d4d4d4,
+  "select-bg": #f1f1f1,
+  "select-color": #292929,
 );
 
 html,
@@ -37,6 +42,14 @@ thead {
   --bs-table-hover-bg: #e5f3ef;
 }
 
+.btn-action {
+  background-color: map-get($colors, "btn-color");
+}
+
+select {
+  background-color: map-get($colors, "selecet-bg");
+  color: map-get($colors, "select-color");
+}
 .button-45 {
   background-color: map-get($colors, "bg");
   border: 1px solid map-get($colors, "borderColor");

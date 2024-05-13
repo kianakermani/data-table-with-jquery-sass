@@ -124,4 +124,60 @@ input[type=checkbox] {
 
 table tr {
   font-weight: bold;
-}/*# sourceMappingURL=style.css.map */
+}
+
+html,
+body {
+  background-color: rgb(31, 31, 31);
+}
+
+.all {
+  background-color: #6e6e6e;
+}
+
+.fa-circle-info:hover {
+  color: rgb(213, 213, 213);
+}
+
+thead {
+  --bs-table-bg: #406a65;
+}
+
+.table {
+  --bs-table-bg: #6e6e6e;
+}
+
+.table-hover {
+  --bs-table-hover-bg: #7e7e7e;
+}
+
+.btn-action {
+  background-color: #7e7e7e;
+}
+
+select {
+  background-color: #444444;
+  color: #e1e1e1;
+}
+
+.button-45 {
+  background-color: #214d47;
+  border: 1px solid #b1d6d1;
+  color: #59c4ad;
+}
+
+.button-45:hover {
+  background-color: rgb(52, 126, 121);
+  border-color: #a4fae0;
+}
+
+.popup {
+  --bs-table-hover-bg: #cacaca;
+  border: 1px solid #ccc;
+}
+.popup a {
+  color: #000;
+}
+.popup a:hover {
+  background-color: #e2e2e2;
+}/*# sourceMappingURL=dark.css.map */
