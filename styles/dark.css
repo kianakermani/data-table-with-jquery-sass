@@ -117,10 +117,6 @@ input[type=checkbox] {
   text-decoration: none;
   border-radius: 5%;
 }
-.popup .open-left {
-  right: 100%;
-  transform: translateX(100%);
-}
 
 table tr {
   font-weight: bold;
