@@ -140,15 +140,15 @@ body {
 }
 
 thead {
-  --bs-table-bg: #406a65;
+  --bs-table-bg: #cfe6e3;
 }
 
 .table {
-  --bs-table-bg: #6e6e6e;
+  --bs-table-bg: #f5f5f5;
 }
 
 .table-hover {
-  --bs-table-hover-bg: #7e7e7e;
+  --bs-table-hover-bg: #e5f3ef;
 }
 
 .btn-action {
@@ -172,7 +172,7 @@ select {
 }
 
 .popup {
-  --bs-table-hover-bg: #cacaca;
+  --bs-table-hover-bg: #ececec;
   border: 1px solid #ccc;
 }
 .popup a {
@@ -180,4 +180,16 @@ select {
 }
 .popup a:hover {
   background-color: #e2e2e2;
+}
+
+thead {
+  --bs-table-bg: #406a65;
+}
+
+.table {
+  --bs-table-bg: #6e6e6e;
+}
+
+.table-hover {
+  --bs-table-hover-bg: #7e7e7e;
 }/*# sourceMappingURL=dark.css.map */
