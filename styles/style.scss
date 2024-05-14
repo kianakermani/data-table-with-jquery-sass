@@ -4,8 +4,6 @@
 @use "./icon";
 @use "./checkbox";
 @use "./Direction";
-// @use "./Ltheme";
-// @import "./theme";
 
 .button-45 {
   align-items: center;
@@ -17,9 +15,7 @@
   font-weight: 700;
   line-height: 33.4929px;
   padding: 2px 12px;
-  // margin-right: 7px;
   margin-bottom: 15px;
-  // float: $start-direction;
 }
 
 /* styling popup */
@@ -65,14 +61,3 @@ $table-selector: table;
     font-weight: bold;
   }
 }
-
-// .dark-theme {
-//   @import "./Dtheme";
-
-// }
-
-// .light-theme {
-//   @import "./Ltheme";
-// }
-
-
