@@ -5,7 +5,7 @@
   $icon-color: rgb(213, 213, 213),
   $border-popup: #ccc,
   $a-color: #000,
-  $a-hover: #e2e2e2,
+  $a-hover: #bbbbbb,
   $bg: #214d47,
   $borderColor: #b1d6d1,
   $Color: #59c4ad,
@@ -21,9 +21,13 @@ thead {
 }
 
 .table {
-  --bs-table-bg: #6e6e6e;
+  --bs-table-bg: #606060;
 }
 
 .table-hover {
-  --bs-table-hover-bg: #7e7e7e;
+  --bs-table-hover-bg: #666666;
+}
+
+.popup {
+  --bs-table-hover-bg: #828282;
 }

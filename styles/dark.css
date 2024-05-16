@@ -175,7 +175,7 @@ select {
   color: #000;
 }
 .popup a:hover {
-  background-color: #e2e2e2;
+  background-color: #bbbbbb;
 }
 
 thead {
@@ -183,9 +183,13 @@ thead {
 }
 
 .table {
-  --bs-table-bg: #6e6e6e;
+  --bs-table-bg: #606060;
 }
 
 .table-hover {
-  --bs-table-hover-bg: #7e7e7e;
+  --bs-table-hover-bg: #666666;
+}
+
+.popup {
+  --bs-table-hover-bg: #828282;
 }/*# sourceMappingURL=dark.css.map */
