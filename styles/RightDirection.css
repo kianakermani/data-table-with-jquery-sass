@@ -1,0 +1,13 @@
+body,
+html {
+  direction: rtl;
+}
+
+.button-45 {
+  margin-right: 7px;
+  margin-left: 0px;
+}
+
+.popup {
+  left: 45px;
+}/*# sourceMappingURL=RightDirection.css.map */

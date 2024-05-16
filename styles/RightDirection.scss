@@ -1,0 +1,15 @@
+@import "./directionVariables";
+
+body,
+html {
+  direction: $dir;
+}
+
+.button-45 {
+  margin-right: $marginr;
+  margin-left: $marginl;
+}
+
+.popup {
+  left: $left;
+}

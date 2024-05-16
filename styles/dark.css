@@ -63,26 +63,6 @@ input[type=checkbox] {
   accent-color: green;
 }
 
-.rDirection {
-  direction: rtl;
-}
-.rDirection .button-45 {
-  margin-right: 7px;
-}
-.rDirection .popup {
-  left: 45px;
-}
-
-.lDirection {
-  direction: ltr;
-}
-.lDirection .button-45 {
-  margin-left: 7px;
-}
-.lDirection .popup {
-  left: 1380px;
-}
-
 .button-45 {
   align-items: center;
   border-radius: 11px;
